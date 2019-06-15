@@ -1,4 +1,4 @@
-$("#search-button").on("click", function() {
+$("#button").on("click", function() {
   event.preventDefault();
   
   // This is gonna empty all the previous search results
@@ -8,7 +8,7 @@ $("#search-button").on("click", function() {
   // This line grabs the input from the textbox
 
 
-  var artistName = $("#artist-input").val().trim();
+  var artistName = $("#search").val().trim();
 
   var queryURL = "https://newsapi.org/v2/everything?q="+ artistName +"&apiKey=787c8e2866844a7c94f18cfad8f6bc06&tot&pageSize=4";
 

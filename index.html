@@ -1,63 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport">
-   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <title>Document</title>
-   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-   <script
-   src="https://code.jquery.com/jquery-3.4.1.min.js"
-   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-   crossorigin="anonymous"></script>
-   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-   <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
-</head>
-<body>
-   <div class="jumbotron jumbotron-fluid my-jumbo">
-       <div class="container jumbo-container" id="artist-img">
-           <div class="row">
-               <div class="col-lg-12">
-                   <h1 class="jumbo-text">Pamdora</h1>
-               </div>
-           </div>
-           <div class="container my-form">
-               <div class="row">
-                   <div class="col-lg-12">
-                           <form class="form-inline">
-                           <input id="artist-input" type="text" class="form-control mr-sm-2" >
-                           <input id="search-button" value="Search Artist" type="submit" class="btn btn-outline-success">
-                       </form>
-                   </div>
-               </div>
-           </div>
-       </div>
-   </div>
-   <div class="row">
-       <div class="col-lg-4">
-           <img src="assets/images/yamom.jpg" alt="">
-       </div>
-       <div class="col-lg-8 name" id="artist-name">
-           <!-- <h1 class="name">hello</h1> -->
-           <br>
-           <div class="container vid-sec">
-               <div class="row">
-                   <div class="col-lg-12" id="video">
-                       <h1 id="artistInfo"></h1>
-                   </div>
-               </div>
-           </div>
-       </div>
-   </div>
-   <br>
-   <div class="row articles-row">
-       <div class="col-lg-12" id="articles">
-           <h3>Articles</h3>
-       </div>
-   </div>
-   <br>
-   <script type="text/javascript" src="assets/javascript/app.js">
-   </script>
-</body>
-</html>
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <link
+    href="https://fonts.googleapis.com/css?family=Audiowide%7CMegrim%7CMichroma%7CMonoton%7COrbitron%7CShrikhand&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Project 1 Demo</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="jumbotron">
+      <h1 class="display-4" id="title">Pamdora</h1>
+      <p class="lead" id="subTitle">Get what you want</p>
+    </div>
+  </div>
+  <div class="container">
+    <div class="form-group">
+      <label for="search">Search </label>
+      <input type="search" class="form-control" id="search" placeholder="Find your musical bliss">
+    </div>
+  </div>
+  <div class="container">
+    <button type="submit" class="btn btn-dark" id="button">Submit</button>
+  </div>
+  </form>
+  <br>
+  <br>
+  <div class="container">
+    <div class="row col-md-12">
+      <h1 id="artistInfo"></h1>
+    </div>
+  </div>
+  <br>
+  <br>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4" id="imgDisplay">IMAGE Placeholder</div>
+      <div class="col-sm-2"></div>
+      <div class="col-sm-6" id="srchDisplay"></div>
+    </div>
+
+    <script rel="stylesheet" src="./assets/javascript/app.js"></script>
+
+</body>
+
+</html>
