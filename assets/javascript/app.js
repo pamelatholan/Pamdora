@@ -7,9 +7,9 @@ $("#search-button").on("click", function() {
 
 
   var artistName = $("#artist-input").val().trim();
-  var queryURL = "https://newsapi.org/v2/everything?q="+ artistName +"&apiKey=787c8e2866844a7c94f18cfad8f6bc06&tot&pageSize=4";
-  var queryURL2 = "http://api.eventful.com/json/events/search?...&keywords=" + artistName + "&app_key=txM6TBSz6KpmbjwL";
-  var queryURL3 = "https://api.deezer.com/search?q=" + artistName + "&app_id=98cc6f86bc10e03d8a5e760d8d5f6491";
+  var queryURL = "https://newsapi.org/v2/everything?q="+ artistName +"&apiKey=787c8e2866844a7c94f18cfad8f6bc06&tot&pageSize=10";
+  var queryURL2 = "https://cors-anywhere.herokuapp.com/http://api.eventful.com/json/events/search?...&keywords=" + artistName + "&app_key=txM6TBSz6KpmbjwL";
+  var queryURL3 = "https://cors-anywhere.herokuapp.com/https://api.deezer.com/search?q=" + artistName;
 
   $.ajax({
     url: queryURL,
@@ -47,11 +47,19 @@ $("#search-button").on("click", function() {
 
   $.ajax({
     url:queryURL3,
-    method: "GET",
+    method: "GET"
   }).then(function(response){
-
     console.log(response);
+    var results = response.data;
+    for (var i = 0; i < 5; i++) {
+      var resultsDiv = $("<div>");
 
+      var name = $("<p>").text(results[i].title);
+      resultsDiv.append(name);
+      $("#video").append(resultsDiv);
+
+
+    }
   })
 
 
