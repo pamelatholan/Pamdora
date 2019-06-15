@@ -1,5 +1,10 @@
 $("#search-button").on("click", function() {
   event.preventDefault();
+  
+  // This is gonna empty all the previous search results
+  $("#articles").empty();
+  $("#artistInfo").empty();
+  
   // This line grabs the input from the textbox
 
 
@@ -25,5 +30,9 @@ $("#search-button").on("click", function() {
        $('#articles').append(resultsDiv)
    })   
   })
+
+  // This displays the searched artist's name as the header
+  $("#artistInfo").text(artistName)
+
   })
       
