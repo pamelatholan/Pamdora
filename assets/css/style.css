@@ -34,26 +34,35 @@
     color: rgb(252, 157, 204);
  }
  
- #imgDisplay {
-    font-family: 'Orbitron', sans-serif;
-    color: rgb(252, 157, 204);
+ #tracks {
+   font-family: 'Rubik', sans-serif;
+    color: white;
     font-weight: bold;
-    font-size: 25px;
-    background-color: #343a40;
+    font-size: 20px;
+    /* background-color: #343a40; */
     text-align: center;
  }
  
- #srchDisplay {
-    font-family: 'Orbitron', sans-serif;
-    color: rgb(252, 157, 204);
-    font-weight: bold;
-    font-size: 25px;
-    background-color: #343a40;
-    text-align: center;
- }
+ #articles {
+   font-family: 'Rubik', sans-serif;   
+   color: white;
+   font-weight: bold;
+   font-size: 16px;
+   /* background-color: #343a40; */
+   text-align: center;
+}
  
  #search {
     background-color: #343a40;
     border-color: black;
     color: rgb(252, 157, 204);
+ }
+
+ #artistInfo {
+   font-family: 'Orbitron', sans-serif;
+   color: rgb(252, 157, 204);
+   font-weight: bold;
+   font-size: 30px;
+   /* background-color: #343a40; */
+   text-align: center;
  }

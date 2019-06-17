@@ -23,9 +23,7 @@ $(document).ready(function() {
 
     // This line grabs the input from the textbox
 
-    var artistName = $("#search")
-      .val()
-      .trim();
+    var artistName = $("#search").val().trim();
 
     database.ref().push({
       newArtist: artistName
@@ -49,16 +47,16 @@ $(document).ready(function() {
            var p = $('<p>').text(results[i].description)
            var myBreak = $('<br>')
            var url = results[i].url
-           var linkTag = $('<a>').attr('href', url).text('More Info')
+           var linkTag = $('<a>').attr('href', url).text(" " + 'More Info')
            var picUrl = results[i].urlToImage
-           var pic = $('<img>').attr( { src:picUrl, height:"200px", width: "200px" } )
+           var pic = $('<img>').attr( { src:picUrl, height:"200px", width: "300px" } )
            resultsDiv.append(p)
            resultsDiv.prepend(linkTag)
            resultsDiv.prepend(pic)
            $('#articles').append(resultsDiv)
           //  $('#events').append(pic)
        }
-       $("#artistInfo").text(artistName).toUpperCase();
+       $("#artistInfo").text(artistName.toUpperCase());
 
       })
     
@@ -84,7 +82,7 @@ $(document).ready(function() {
     
           var name = $("<p>").text(results[i].title);
           resultsDiv.append(name);
-          $("#video").append(resultsDiv);
+          $("#tracks").append(resultsDiv);
     
     
         }
