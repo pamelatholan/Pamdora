@@ -50,12 +50,16 @@ $(document).ready(function() {
            var linkTag = $('<a>').attr('href', url).text(" " + 'More Info')
            var picUrl = results[i].urlToImage
            var pic = $('<img>').attr( { src:picUrl, height:"200px", width: "300px" } )
+           var header = $('<h1>')
+           header.addClass("articles")
+           header.text("News Articles")
            resultsDiv.append(p)
            resultsDiv.prepend(linkTag)
            resultsDiv.prepend(pic)
            $('#articles').append(resultsDiv)
           //  $('#events').append(pic)
        }
+        $('#articles').prepend(header)
        $("#artistInfo").text(artistName.toUpperCase());
 
       })
@@ -66,6 +70,7 @@ $(document).ready(function() {
         method: "GET"
       }).then(function(response){
         console.log(response);
+        var results = response.events
         // console.log(response.events.event[0].description);
     
       })
