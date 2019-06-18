@@ -21,6 +21,8 @@ $(document).ready(function() {
     $("#articles").empty();
     $("#artistInfo").empty();
     $("#tracks").empty();
+    $("#concerts").empty();
+
 
     // This line grabs the input from the textbox
 
@@ -102,6 +104,12 @@ $(document).ready(function() {
     
     
         }
+        var header = $('<h1>')
+        header.addClass("tracks")
+        header.text("Top 5 Tracks")
+        $("#tracks").prepend(header);
+
+
       })
   });
 });
