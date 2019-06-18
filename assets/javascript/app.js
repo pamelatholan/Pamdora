@@ -80,8 +80,6 @@ $(document).ready(function() {
           $("#concerts").append(resultsDiv);
 
         }
-        // var results = response.events
-        // console.log(response.events.event[0].description);
     
       })
       
@@ -101,6 +99,8 @@ $(document).ready(function() {
     
     
         }
+
+
       })
   });
 });
