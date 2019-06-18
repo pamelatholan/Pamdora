@@ -20,6 +20,7 @@ $(document).ready(function() {
     // This is gonna empty all the previous search results
     $("#articles").empty();
     $("#artistInfo").empty();
+    $("#tracks").empty();
 
     // This line grabs the input from the textbox
 

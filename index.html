@@ -16,9 +16,9 @@
     crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css?family=Megrim%7COrbitron&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Rubik:700&display=swap" rel="stylesheet">
-    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/moment.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/moment.min.js"></script>
   <link rel="stylesheet" href="assets/css/style.css">
   <title>Project 1 Demo</title>
 </head>
@@ -30,15 +30,16 @@
       <p class="lead" id="subTitle">Get what you want</p>
     </div>
   </div>
-  <div class="container">
-    <div class="form-group">
-      <label for="search">Search </label>
-      <input type="search" class="form-control" id="search" placeholder="Find your musical bliss">
+  <form>
+    <div class="container">
+      <div class="form-group">
+        <label for="search">Search </label>
+        <input type="search" class="form-control" id="search" placeholder="Find your musical bliss">
+      </div>
     </div>
-  </div>
-  <div class="container">
-    <button type="submit" class="btn btn-dark" id="button">Submit</button>
-  </div>
+    <div class="container">
+      <input type="submit" class="btn btn-dark" id="button">Submit</input>
+    </div>
   </form>
   <br>
   <br>
@@ -51,11 +52,15 @@
   <br>
   <div class="container">
     <div class="row">
-      <div class="col-md-6" id="articles"><h1>News Articles</h1></div>
+      <div class="col-md-6" id="articles">
+        <h1>News Articles</h1>
+      </div>
       <div class="col-md-2"></div>
-      <div class="col-md-4" id="tracks"><h1>Top 5 Tracks</h1></div>
+      <div class="col-md-4" id="tracks">
+        <h1>Top 5 Tracks</h1>
+      </div>
     </div>
-    
+
 
     <script rel="stylesheet" src="./assets/javascript/app.js"></script>
 
