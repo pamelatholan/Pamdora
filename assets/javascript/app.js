@@ -14,23 +14,32 @@ $(document).ready(function() {
 
   var database = firebase.database();
 
+  $("#articles").hide();
+  $("#tracks").hide();
+  $("#concerts").hide();
+
   $("#button").on("click", function() {
     event.preventDefault();
+    $("#articles").show();
+    $("#tracks").show();
+    $("#concerts").show();
+  
 
-    // This is gonna empty all the previous search results
+    // This will empty all the previous search results
     $("#articles").empty();
     $("#artistInfo").empty();
     $("#tracks").empty();
     $("#concerts").empty();
 
 
-    // This line grabs the input from the textbox
+    // This line grabs the input from the text box
 
     var artistName = $("#search").val().trim();
 
     database.ref().push({
       newArtist: artistName
     });
+
 
     var queryURL =
       "https://newsapi.org/v2/everything?q=" +
