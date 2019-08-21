@@ -8,7 +8,7 @@
     * Upcoming concerts and events - Events API
         * Displays events, time, location and a link to purchase tickets
 
-![Pamdora](../images/Pamdora.png)
+![Pamdora](https://github.com/pamelatholan/Pamdora/blob/master/assets/images/Pamdora.PNG)
 
 * This was a group project, breakout below:
     * Pam: HTML, CSS, troubleshooting layout, slide presentation
