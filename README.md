@@ -34,6 +34,7 @@
 Link to original repo: [Github](https://github.com/gkarmo/Pamdora)
 
 * Updates I made to original:
+    * Detailed Readme
     * Changed the color of the result div headers to have them stand out more
 
 
