@@ -2,7 +2,7 @@
 
 Deployed on [GitHubPages](https://pamelatholan.github.io/Pamdora/)
 
-Pamdora is your one stop shop to view music and entertainment news for your favorite artists.
+#### Pamdora is your one stop shop to view music and entertainment news for your favorite artists.
 
 ### Information Displayed:
 * New Articles - News API
@@ -24,7 +24,7 @@ Pamdora is your one stop shop to view music and entertainment news for your favo
 * Events API
 * GoogleFonts
 
-### This was a group project, breakout below:
+### Team Roles:
 * Pam: HTML, CSS, troubleshooting layout, slide presentation
 * Gayah: APIs and Javascript 
 * Brooke: Firebase configuration, general troubleshooting
