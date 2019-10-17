@@ -1,5 +1,7 @@
 # Pamdora
 
+![Pamdora](https://github.com/pamelatholan/Pamdora/blob/master/assets/images/Pamdora.PNG)
+
 Deployed on [GitHubPages](https://pamelatholan.github.io/Pamdora/)
 
 #### Pamdora is your one stop shop to view music and entertainment news for your favorite artists.
