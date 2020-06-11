@@ -41,9 +41,9 @@ $(document).ready(function() {
     });
 
     var queryURL =
-      "https://newsapi.org/v2/everything?q=" +
+      "https://cors-anywhere.herokuapp.com/https://newsapi.org/v2/everything?q=" +
       artistName +
-      "&apiKey=787c8e2866844a7c94f18cfad8f6bc06&tot&pageSize=4";
+      "&apiKey=e71eaf997a6c4ec09c12693d6ef25923";
     var queryURL2 =
       "https://cors-anywhere.herokuapp.com/http://api.eventful.com/json/events/search?keywords=" +
       artistName +
